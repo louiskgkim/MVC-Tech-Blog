@@ -29,8 +29,8 @@ Some files will be needed in order for this generator to operate:
 1. Clone the repository
 2. Open terminal in the right file path
 3. Run 'npm install' or 'npm i' to download the packages needed
-4. Run the command node server.js to run the software
-5. Run 
+4. Run 'npm run seed'
+5. Run the command node server.js to run the software
 
 ## Demo Video ()
 
