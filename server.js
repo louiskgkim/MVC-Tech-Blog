@@ -10,6 +10,7 @@ const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const helpers = require('./utils/helpers');
 
+// handlebars js engine instance with custom helpers
 const hbs = exphbs.create({ helpers });
 
 const sess = {
@@ -18,6 +19,7 @@ const sess = {
     // Session will automatically expire in 10 minutes
     expires: 10 * 60 * 1000
   },
+  // false is typically recommended
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -33,7 +35,9 @@ const PORT = process.env.PORT || 3001;
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+// middleware for session object
 app.use(session(sess));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
