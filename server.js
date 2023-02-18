@@ -29,7 +29,7 @@ const sess = {
 
 // sets up express app
 const app = express();
-const PORT = listen(process.env.PORT) || 3001;
+const PORT = process.env.PORT || 3001;
 
 // sets Handlebars as the default template engine
 app.engine('handlebars', hbs.engine);
