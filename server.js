@@ -13,15 +13,33 @@ const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-  secret: 
-  cookie: 
-  resave: 
-  saveUninitialized: 
-  store: 
-    db:
+  secret: 'ollie',
+  cookie: {
+    // Session will automatically expire in 10 minutes
+    expires: 10 * 60 * 1000
+  },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db:sequelize
   })
 };
 
 // sets up express app
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// sets Handlebars as the default template engine
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+app.use(session(sess));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(routes);
+
+// connection to db and server
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
+});
