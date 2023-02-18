@@ -7,8 +7,9 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Demo Video](#demovideo)
 - [Screenshots](#screenshots)
+- [Repository](#repository)
+- [Heroku](#heroku)
 - [Credits](#credits)
 - [License](#license)
 
@@ -30,15 +31,19 @@ Some files will be needed in order for this generator to operate:
 2. Open terminal in the right file path
 3. Run 'npm install' or 'npm i' to download the packages needed
 4. Run 'npm run seed'
-5. Run the command node server.js to run the software
-
-## Demo Video ()
+5. Run the command node server.js to run the software to your local host
 
 ## Screenshots
 
 
 
 ### Repository:
+```
+https://github.com/louiskgkim/MVC-Tech-Blog
+```
+
+
+### Heroku:
 ```
 
 ```
@@ -53,10 +58,10 @@ No collaborators for this project. But some references are listed below:
 - [MySQL2 Download Guide](https://coding-boot-camp.github.io/full-stack/mysql/mysql-installation-guide)
 - [Sequelize Installation Link](https://www.npmjs.com/package/sequelize)
 - [dotenv Installation Link](https://www.npmjs.com/package/dotenv)
-- [Express Handlebars Link] (https://www.npmjs.com/package/express-handlebars)
-- [bcrypt Link] (https://www.npmjs.com/package/bcrypt)
-- [Express Session Link] (https://www.npmjs.com/package/express-session)
-- [Connect Session Sequelize] (https://www.npmjs.com/package/connect-session-sequelize)
+- [Express Handlebars Link](https://www.npmjs.com/package/express-handlebars)
+- [bcrypt Link](https://www.npmjs.com/package/bcrypt)
+- [Express Session Link](https://www.npmjs.com/package/express-session)
+- [Connect Session Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
 
 ## License
 
