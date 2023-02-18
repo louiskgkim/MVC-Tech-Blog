@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
           'comment_text',
           'created_at',
           'post_id',
-          'user_id',
+          'user_id'
         ],
         include: {
           model: User,
@@ -67,7 +67,7 @@ router.get('./:id', (req, res) => {
           'comment_text',
           'created_at',
           'post_id',
-          'user_id',
+          'user_id'
         ],
         include: {
           model: User,
@@ -78,7 +78,7 @@ router.get('./:id', (req, res) => {
   })
     .then(dbPostData => {
       if (!dbPostData) {
-        res.status(404).json({ message: 'No post found with this id! ' });
+        res.status(404).json({ message: 'No post found with this id!' });
         return;
       }
       res.json(dbPostData);
