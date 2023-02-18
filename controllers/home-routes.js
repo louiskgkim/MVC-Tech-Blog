@@ -2,7 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
-router.get('./', (req, res) => {
+router.get('/', (req, res) => {
   Post.findAll({
     attributes: [
       // Getting ID, Title, and timestamp from post table
