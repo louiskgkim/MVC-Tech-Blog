@@ -27,7 +27,7 @@ const postData = [
     post_content: "The purpose of this calendar app allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery & Bootstrap. Each time block is color coded to indicate whether it is in the past, present, or future. Any event will be saved in the local storage.",
     user_id: 4
   }
-]
+];
 
 const seedPosts = () => Post.bulkCreate(postData);
 

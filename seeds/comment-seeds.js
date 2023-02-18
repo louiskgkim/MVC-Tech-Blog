@@ -31,7 +31,7 @@ const commentData = [
     post_id: 1,
     comment_text: "Keep up the good work!"
   }
-]
+];
 
 const seedComments = () => Comment.bulkCreate(commentData);
 
