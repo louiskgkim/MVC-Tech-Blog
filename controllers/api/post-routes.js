@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       'created_at',
       'post_text',
     ],
-    order: [['created at', 'DESC']],
+    order: [['created_at', 'DESC']],
     include: [
       // from user table include the username of the creator
       {
