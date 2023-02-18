@@ -34,7 +34,9 @@ Some files will be needed in order for this generator to operate:
 5. Run the command node server.js to run the software to your local host
 
 ## Screenshots
+![error 1](https://user-images.githubusercontent.com/115679155/219845310-62ed1f26-8b91-4ceb-bce8-a141b2a8008f.png)
 
+![error 2](https://user-images.githubusercontent.com/115679155/219845311-432d4ea0-eb35-4ae3-bb6f-4fe376423dc8.png)
 
 
 ### Repository:
