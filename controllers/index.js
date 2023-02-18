@@ -12,4 +12,9 @@ router.use('/', homeRoutes);
 // define path for dashboard routes
 router.use('/dashboard', dashboardRoutes);
 
+// catch-all route for any resource that does not exist
+router.use((req, res) =>{
+  res.status(404).end();
+});
+
 module.exports = router;

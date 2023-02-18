@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
-
 const withAuth = require('../utils/auth')
 
 router.get('./', withAuth, (req, res) => {
@@ -90,6 +89,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
         return;
       }
       const post = dbPostData.get({ plain: true });
+      res.render('edit-post', { post, loggedIn: true });
     })
     .catch(err => {
       // if a server error, then return an error
